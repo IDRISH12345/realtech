@@ -16,3 +16,5 @@ function updateSlide() {
   slides.style.transition = "transform 0.5s ease-in-out";
   slides.style.transform = `translateX(-${slideIndex * 100}%)`;
 }
+
+

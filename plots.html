@@ -6,8 +6,15 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+
+
+
+
+	<!-- ✅ HEADER -->
+
+
   <header>
-    
     <div class="logo">
     <img src="images/RealTech.png" alt="RealTech Logo" />
     <span>RealTech</span>
@@ -21,88 +28,171 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
+
     <div class="header-right">
       <a href="https://wa.me/917409979678" class="whatsapp">WhatsApp</a>
     </div>
   </header>
 
-  <main>
-    <h1>Available Plots</h1>
-    <!DOCTYPE html>
-<html>
-<head>
-  <style>
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-      padding: 20px;
-    }
-
-    .gallery-item {
-      text-align: center;
-    }
-
-    .gallery-item img {
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
-    }
-
-    .gallery-item p {
-      margin-top: 10px;
-      font-size: 16px;
-      color: #333;
-      font-weight: bold;
-    }
-  </style>
-</head>
-<main><body>
-
-  <div class="gallery">
-  <div class="gallery-item">
-      <a href="plots/325 MATHURA VIHAR COLONY-R1.pdf" target="_blank">
-      <img src="images/SHRI SHAYAM COLONY.jpg" alt="MATHURA VIHAR COLONY" style="width:200px;">
-    </a>
-    <h4>MATHURA VIHAR COLONY</h4>
-    </div>
-
-  <div class="gallery-item">
-      <a href="plots/383 Guru Nanak Enclave-R1.pdf" target="_blank">
-      <img src="images/SHRI SHAYAM COLONY.jpg" alt="Guru Nanak Enclave" style="width:200px;">
-    </a>
-    <h4>Guru Nanak Enclave</h4>
-    </div>
-
-    <div class="gallery-item">
-      <a href="plots/412 Geen City COLONY-Model.pdf" target="_blank">
-      <img src="images/SHRI SHAYAM COLONY.jpg" alt="412 Geen City COLONY" style="width:200px;">
-    </a>
-    <h4>412 Geen City COLONY</h4>
-    </div>
 
 
-	<div class="gallery-item">
-      <a href="plots/NEW AGGARWAL COLONY FINAL LAYOUT.pdf" target="_blank">
-      <img src="images/SHRI SHAYAM COLONY.jpg" alt="NEW AGGARWAL COLONY" style="width:200px;">
-    </a>
-    <h4>NEW AGGARWAL COLONY</h4>
-    </div>
+	<!-- ✅ SEARCH FILTER -->
 
-    <div class="gallery-item">
-      <a href="plots/SHRI SHAYAM COLONY.pdf" target="_blank">
-      <img src="images/SHRI SHAYAM COLONY.jpg" alt="SHRI SHAYAM COLONY" style="width:200px;">
-    </a>
-    <h4>SHRI SHAYAM COLONY</h4>
-    </div>
+
+	<div class="search-filters">
+  	<input type="text" id="searchInput" placeholder="Search by Location, Category"/>
+  	<button type="button" onclick="filterProperties()">Search</button>
+	</div>
+
+
+
+	<!-- ✅ TABS NAV -->
+
+	<div class="tabs">
+  	<button class="tab-btn active" onclick="openTab('sale', this)">Sale Properties</button>
+  	<button class="tab-btn" onclick="openTab('rent', this)">Rent Properties</button>
+  	<button class="tab-btn" onclick="openTab('dealers', this)">Dealers</button>
+	</div>
+
+
+
+	<!-- SALE PROPERTIES -->
+	<div class="tab-content" id="sale" style="display: block;">
+ 	 <!-- 👉 Sale property cards here -->
+	
+
+	 <!-- ✅ PROPERTY LIST -->
+
+	<div class="property-list">
+    	
+ 	<!-- PROPERTY CARD 1 -->
+
+
+	<div class="property-card">
+      	<a href="plots/SHRI SHAYAM COLONY.pdf" target="_blank">
+      	<img src="images/SHRI.png" alt="Property Image" style="width:150px;">
+	</a>
+      	<div class="property-info">
+	
+        <h2>Best Residential Plot for Sale(Badshahpur)</h2>
+        <p class="price">₹ 2500/- per sq.ft</p>
+        <p class="details">Plot Area: 1,125 sq.ft | Freehold</p>
+        <p class="agent">Agent: SHRI SHAYAM COLONY</p>
+        <a href="tel:+917409979678" class="call-btn">📞 Contact Agent</a>
+	<a href="https://maps.app.goo.gl/qDy5g9YQHAVGergR6" class="map-btn" target="_blank">📍 View on Location</a>
+
+      </div>
      </div>
-    </body></main>
-  </main>
-</body>
-</html>
-</body>
-</html>
 
+	<!-- PROPERTY CARD 2 -->
+
+
+    	<div class="property-card">
+      	<a href="plots/325 MATHURA VIHAR COLONY-R1.pdf" target="_blank">
+      	<img src="images/Mathura.png" alt="MATHURA VIHAR COLONY" style="width:150px;">
+   	 </a>
+     	 <div class="property-info">
+	
+        <h2>Best Residential Plot for Sale(Laksar)</h2>
+        <p class="price">₹ 2500/- per sq.ft</p>
+        <p class="details">Plot Area: 1,250 sq.ft | Freehold</p>
+        <p class="agent">Agent: MATHURA VIHAR COLONY</p>
+        <a href="tel:+917409979678" class="call-btn">📞 Contact Agent</a>
+	<a href="https://www.google.com/maps/place/29%C2%B045'15.7%22N+78%C2%B001'31.4%22E/@29.754348,78.025396,696m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d29.754348!4d78.025396?entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D" class="map-btn" target="_blank">📍 View on Location</a>
+
+      </div>
+     </div>
+
+	<!-- PROPERTY CARD 3 -->
+
+
+    <div class="property-card">
+      <a href="plots/383 Guru Nanak Enclave-R1.pdf" target="_blank">
+      <img src="images/GURU.png" alt="Property Image" style="width:150px;">
+	</a>
+      <div class="property-info">
+	
+        <h2>Best Residential Plot for Sale(Laksar)</h2>
+        <p class="price">₹ 2500/- per sq.ft</p>
+        <p class="details">Plot Area: 825 sq.ft | Freehold</p>
+        <p class="agent">Agent: Guru Nanak Enclave</p>
+        <a href="tel:+917409979678" class="call-btn">📞 Contact Agent</a>
+	<a href="https://maps.app.goo.gl/GJmbEqcJAfgkwZ717" class="map-btn" target="_blank">📍 View on Location</a>
+
+      </div>
+     </div>
+
+	<!-- PROPERTY CARD 4 -->
+
+
+
+    <div class="property-card">
+      <a href="plots/NEW AGGARWAL COLONY FINAL LAYOUT.pdf" target="_blank">
+      <img src="images/NEW.png" alt="Property Image" style="width:150px;">
+	</a>
+      <div class="property-info">
+	
+        <h2>Best Residential Plot for Sale(Laksar)</h2>
+        <p class="price">₹ 2000/- per sq.ft</p>
+        <p class="details">Plot Area: 1,200 sq.ft | Freehold</p>
+        <p class="agent">Agent: AGGARWAL COLONY</p>
+        <a href="tel:+917409979678" class="call-btn">📞 Contact Agent</a>
+	<a href="https://maps.app.goo.gl/BHmugkHQ3M2CL8nX7" class="map-btn" target="_blank">📍 View on Location</a>
+
+      </div>
+     </div>
+
+	<!-- PROPERTY CARD 5 -->
+
+
+
+    <div class="property-card">
+      <a href="plots/412 Geen City COLONY-Model.pdf" target="_blank">
+      <img src="images/Green.png" alt="Property Image" style="width:150px;">
+	</a>
+      <div class="property-info">
+	
+        <h2>Best Residential Plot for Sale(Mohammadpur Kunhari)</h2>
+        <p class="price">₹ 2500/- per sq.ft</p>
+        <p class="details">Plot Area: 1,250 sq.ft | Freehold</p>
+        <p class="agent">Agent: Geen City COLONY</p>
+        <a href="tel:+917409979678" class="call-btn">📞 Contact Agent</a>
+	<a href="https://maps.app.goo.gl/GCqHAaeUH1M1kQSZ9" class="map-btn" target="_blank">📍 View on Location</a>
+
+      </div>
+     </div>
+
+	<!-- PROPERTY CARD 6 -->
+
+
+
+    <div class="property-card">
+      <a href="plots/443 Sultanpur Colony.pdf" target="_blank">
+      <img src="images/Sultan.png" alt="Property Image" style="width:150px;">
+	</a>
+      <div class="property-info">
+	
+        <h2>Best Residential Plot for Sale(Sultanpur)</h2>
+        <p class="price">₹ 1500/- per sq.ft</p>
+        <p class="details">Plot Area: 1,625 sq.ft | Freehold</p>
+        <p class="agent">Agent: SULTANPUR COLONY</p>
+        <a href="tel:+917409979678" class="call-btn">📞 Contact Agent</a>
+	<a href="https://maps.app.goo.gl/GYGRRHzQo2mJfBo58" class="map-btn" target="_blank">📍 View on Location</a>
+
+    </div>
+  </div>
+</div>
+	<!-- RENT PROPERTIES -->
+	 <div class="tab-content" id="rent" style="display: none;">
+    	<p>No rent properties yet. Coming soon!</p>
+ 	 <!-- 👉 Rent property cards here -->
+	</div>
+
+	<!-- DEALERS -->
+	<div class="tab-content" id="dealers" style="display: none;">
+    	<p>Our trusted dealers will be listed here soon!</p>
+ 	 <!-- 👉 Dealers info here -->
+	</div>
 
 
 
@@ -143,5 +233,70 @@
     <p>&copy; 2025 RealTech. All rights reserved.</p>
   </div>
 </footer>
+
+
+
+
+ 	<!-- ✅ TABS SCRIPT -->
+
+
+  	<script src="script.js"></script>
+
+	<!-- ✅ SEARCH SCRIPT -->
+
+	<script>
+function filterProperties() {
+  let input = document.getElementById('searchInput').value.toLowerCase();
+  let cards = document.getElementsByClassName('property-card');
+
+  for (let i = 0; i < cards.length; i++) {
+    let cardText = cards[i].innerText.toLowerCase();
+    if (cardText.includes(input) || input === "") {
+      cards[i].style.display = "block"; // ✅ Always force show as block
+    } else {
+      cards[i].style.display = "none";
+    }
+  }
+}
+
+function openTab(tabId, element) {
+  var tabContents = document.getElementsByClassName("tab-content");
+  for (var i = 0; i < tabContents.length; i++) {
+    tabContents[i].style.display = "none";
+  }
+
+  var tabButtons = document.getElementsByClassName("tab-btn");
+  for (var i = 0; i < tabButtons.length; i++) {
+    tabButtons[i].classList.remove("active");
+  }
+
+  document.getElementById(tabId).style.display = "block";
+  element.classList.add("active");
+
+  if (tabId === 'sale') {
+    document.getElementById('searchInput').value = ""; // Clear search
+    filterProperties(); // Show all
+  }
+}
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
 
 

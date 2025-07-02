@@ -9,7 +9,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #69676792;
+  background: #999;
   padding: 15px 30px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
@@ -343,3 +343,220 @@ main {
   padding-top: 15px;
   font-size: 14px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.search-filters {
+  background-color: #666;  /* Light Gray Example */
+  padding: 40px;
+  text-align: center;
+}
+
+.search-filters input {
+  padding: 10px;
+  width: 300px;
+}
+
+.search-filters button {
+  padding: 10px 20px;
+  background-color:  #135;  /* Blue Button */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.search-filters button:hover {
+  background-color: #999; /* Darker Blue on hover */
+}
+
+
+.tabs {
+  display: flex;
+  padding: 10px;
+  background: #999;
+}
+
+.tabs button {
+  flex: 1;
+  padding: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+
+.tabs button.active {
+  border-bottom: 2px solid #0a66c2;
+  font-weight: bold;
+}
+
+.results-info {
+  padding: 10px;
+}
+
+.property-list {
+  padding: 10px;
+}
+
+.property-card {
+  background: #135;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.property-card img {
+  width: 100%;
+  height: auto;
+}
+
+.property-info {
+  padding: 10px;
+}
+
+.property-info h2 {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.property-info .price {
+  color: #999;
+  font-weight: bold;
+}
+
+.property-info .details {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.property-info .agent {
+  font-size: 12px;
+  color: #555;
+}
+
+.property-info button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: #0a66c2;
+  color: #fff;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+
+
+
+
+.call-btn {
+  display: inline-block;
+  background: #0a66c2;
+  color: #fff;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+
+
+
+
+
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.call-btn, .map-btn {
+  display: inline-block;
+  background: #0a66c2;
+  color: #fff;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.map-btn {
+  background: #f44336; /* Red for map link - you can choose any color */
+}
+
+
+
+
+
+.tabs {
+  margin: 20px;
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.tab-btn.active {
+  background: #135;
+  color: white;
+}
+
+.tab-content {
+  margin: 20px;
+}
+
+.property-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+element.style {
+   display: block;
+}
+
+
+
