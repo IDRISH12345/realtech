@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Plots for Sale - RealTech</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>PLOTS - RealTech</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,14 +13,20 @@
 
 
 
-	<!-- ✅ HEADER -->
+
+
+
+
+
+
+
 
 
   <header>
     <div class="logo">
-    <img src="images/RealTech.png" alt="RealTech Logo" />
-    <span>RealTech</span>
-  </div>
+      <img src="images/RealTech.png" alt="RealTech Logo" />
+      <span>RealTech</span>
+    </div>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -27,272 +35,371 @@
       </ul>
     </nav>
 
+
     <div class="header-right">
       <a href="https://wa.me/918534904412" class="whatsapp">WhatsApp</a>
     </div>
   </header>
 
+  
 
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <input type="text" placeholder="Search plots, locations..." id="searchInput">
+      <button onclick="performSearch()">Search</button>
+    </div>
 
-	<!-- ✅ SEARCH FILTER -->
+    <!-- Tabs -->
+    <div class="tab-nav">
+      <button class="tab-link active" onclick="openTab(event, 'single')">Single Plot</button>
+      <button class="tab-link" onclick="openTab(event, 'colony')">Colony</button>
+      <button class="tab-link" onclick="openTab(event, 'villas')">House/Villas</button>
+    </div>
 
-
-	<div class="search-filters">
-  	<input type="text" id="searchInput" placeholder="Search by Location, Category"/>
-  	<button type="button" onclick="filterProperties()">Search</button>
-	</div>
-
-
-
-	<!-- ✅ TABS NAV -->
-
-	<div class="tabs">
-  	<button class="tab-btn active" onclick="openTab('sale', this)">Plot Sale</button>
-  	<button class="tab-btn" onclick="openTab('rent', this)">Properties Sale</button>
-  	<button class="tab-btn" onclick="openTab('dealers', this)">House Sale</button>
-	</div>
+    <!-- Tab Contents -->                      
 
 
 
-	<!-- PLOT SALE -->
-	<div class="tab-content" id="sale" style="display: block;">
- 	 <!-- 👉 Sale property cards here -->
-	
-
-	 <!-- ✅ PROPERTY LIST -->
-
-	<div class="property-list">
-    	
- 	<!-- PROPERTY CARD 1 -->
 
 
-	<div class="property-card">
-      	<a href="plots/SHRI SHAYAM COLONY.pdf" target="_blank">
-      	<img src="images/SHRI.png" alt="Property Image" style="width:150px;">
-	</a>
-      	<div class="property-info">
-	
-        <h2>Best Residential Plot for Sale(Badshahpur)</h2>
-        <p class="price">₹ 2500/- per sq.ft</p>
-        <p class="details">Plot Area: 1,125 sq.ft | Freehold</p>
-        <p class="agent">Agent: SHRI SHAYAM COLONY</p>
-        <a href="tel:+918534904412" class="call-btn">📞 Contact Agent</a>
-	<a href="https://maps.app.goo.gl/qDy5g9YQHAVGergR6" class="map-btn" target="_blank">📍 View on Location</a>
 
+
+
+
+
+                                       <!-- SINGLE PLOT CARD -->
+
+
+
+
+
+
+    <div id="single" class="tab-content active-tab">
+      <div class="card">
+        <div class="card-image-container">
+          <img src="images/new sabar colony.jpeg" alt="Residential plot in Sultanpur">
+           <h4>UMER COLONY (SULTANPUR)</h4>
+            <p>Best residential plots (1837.5 Sq.Ft) केवल ₹12 लाख में।  </p>
+            
+        </div>
+        <div class="card-buttons">
+          
+
+
+
+
+
+
+
+             <!-- For Single Plot -->
+             <button onclick="showImageList(this)" data-images='["images/new sabar colony.jpeg"]'>Image View</button>
+
+
+
+
+
+
+
+          <button onclick="window.open('files/plot1.pdf')">PDF View</button>
+          <button onclick="window.open('https://maps.app.goo.gl/qsEU4Pa3GajmqG8FA')">Location</button>
+          <button onclick="window.open('tel:+918534904412')">Call</button>
+        </div>
       </div>
-     </div>
-
-	<!-- PROPERTY CARD 2 -->
 
 
-    	<div class="property-card">
-      	<a href="plots/325 MATHURA VIHAR COLONY-R1.pdf" target="_blank">
-      	<img src="images/Mathura.png" alt="MATHURA VIHAR COLONY" style="width:150px;">
-   	 </a>
-     	 <div class="property-info">
-	
-        <h2>Best Residential Plot for Sale(Laksar)</h2>
-        <p class="price">₹ 2500/- per sq.ft</p>
-        <p class="details">Plot Area: 1,250 sq.ft | Freehold</p>
-        <p class="agent">Agent: MATHURA VIHAR COLONY</p>
-        <a href="tel:+918534904412" class="call-btn">📞 Contact Agent</a>
-	<a href="https://www.google.com/maps/place/29%C2%B045'15.7%22N+78%C2%B001'31.4%22E/@29.754348,78.025396,696m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d29.754348!4d78.025396?entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D" class="map-btn" target="_blank">📍 View on Location</a>
 
+
+
+
+
+
+
+
+
+
+
+<div class="card">
+        <div class="card-image-container">
+          <img src="images/new colony spur.jpeg" alt="Residential plot in Sultanpur">
+           <h4>UMER COLONY (SULTANPUR)</h4>
+            <p>Best residential plots (1487.5 Sq.Ft) केवल ₹30 लाख में।  </p>
+            
+        </div>
+        <div class="card-buttons">
+          
+
+
+
+
+
+
+
+             <!-- For Single Plot -->
+             <button onclick="showImageList(this)" data-images='["images/new colony spur.jpeg"]'>Image View</button>
+
+
+
+
+
+
+
+          <button onclick="window.open('files/plot1.pdf')">PDF View</button>
+          <button onclick="window.open('https://maps.app.goo.gl/eaMi4E1gzQVrx1xA6')">Location</button>
+          <button onclick="window.open('tel:+918534904412')">Call</button>
+        </div>
       </div>
-     </div>
-
-	<!-- PROPERTY CARD 3 -->
 
 
-    <div class="property-card">
-      <a href="plots/383 Guru Nanak Enclave-R1.pdf" target="_blank">
-      <img src="images/GURU.png" alt="Property Image" style="width:150px;">
-	</a>
-      <div class="property-info">
-	
-        <h2>Best Residential Plot for Sale(Laksar)</h2>
-        <p class="price">₹ 2500/- per sq.ft</p>
-        <p class="details">Plot Area: 825 sq.ft | Freehold</p>
-        <p class="agent">Agent: Guru Nanak Enclave</p>
-        <a href="tel:+918534904412" class="call-btn">📞 Contact Agent</a>
-	<a href="https://maps.app.goo.gl/GJmbEqcJAfgkwZ717" class="map-btn" target="_blank">📍 View on Location</a>
-
-      </div>
-     </div>
-
-	<!-- PROPERTY CARD 4 -->
-
-
-
-    <div class="property-card">
-      <a href="plots/NEW AGGARWAL COLONY FINAL LAYOUT.pdf" target="_blank">
-      <img src="images/NEW.png" alt="Property Image" style="width:150px;">
-	</a>
-      <div class="property-info">
-	
-        <h2>Best Residential Plot for Sale(Laksar)</h2>
-        <p class="price">₹ 2000/- per sq.ft</p>
-        <p class="details">Plot Area: 1,200 sq.ft | Freehold</p>
-        <p class="agent">Agent: AGGARWAL COLONY</p>
-        <a href="tel:+918534904412" class="call-btn">📞 Contact Agent</a>
-	<a href="https://maps.app.goo.gl/BHmugkHQ3M2CL8nX7" class="map-btn" target="_blank">📍 View on Location</a>
-
-      </div>
-     </div>
-
-	<!-- PROPERTY CARD 5 -->
-
-
-
-    <div class="property-card">
-      <a href="plots/412 Geen City COLONY-Model.pdf" target="_blank">
-      <img src="images/Green.png" alt="Property Image" style="width:150px;">
-	</a>
-      <div class="property-info">
-	
-        <h2>Best Residential Plot for Sale(Mohammadpur Kunhari)</h2>
-        <p class="price">₹ 2500/- per sq.ft</p>
-        <p class="details">Plot Area: 1,250 sq.ft | Freehold</p>
-        <p class="agent">Agent: Geen City COLONY</p>
-        <a href="tel:+918534904412" class="call-btn">📞 Contact Agent</a>
-	<a href="https://maps.app.goo.gl/GCqHAaeUH1M1kQSZ9" class="map-btn" target="_blank">📍 View on Location</a>
-
-      </div>
-     </div>
-
-	<!-- PROPERTY CARD 6 -->
-
-
-
-    <div class="property-card">
-      <a href="plots/443 Sultanpur Colony.pdf" target="_blank">
-      <img src="images/Sultan.png" alt="Property Image" style="width:150px;">
-	</a>
-      <div class="property-info">
-	
-        <h2>Best Residential Plot for Sale(Sultanpur)</h2>
-        <p class="price">₹ 1500/- per sq.ft</p>
-        <p class="details">Plot Area: 1,625 sq.ft | Freehold</p>
-        <p class="agent">Agent: SULTANPUR COLONY</p>
-        <a href="tel:+918534904412" class="call-btn">📞 Contact Agent</a>
-	<a href="https://maps.app.goo.gl/GYGRRHzQo2mJfBo58" class="map-btn" target="_blank">📍 View on Location</a>
 
     </div>
-  </div>
+
+
+
+
+
+
+
+
+
+
+ 
+                                                     <!-- COLONY CARD -->
+
+
+    <div id="colony" class="tab-content">
+      <div class="card">
+        <div class="card-image-container">
+          <img src="images/SHRI.png" alt="Colony" onclick="openFullView(this)">
+            <h4>SHRI SHAYAM COLONY (SHAHPUR)</h4>
+            <p>Best affrodable residential plots in colony</p>
+        </div>
+        <div class="card-buttons">
+
+
+
+
+
+
+
+          <!-- For Colony Plot -->
+          <button onclick="showImageList(this)" data-images='["images/SHRI1.jpg", "images/SHRI.png"]'>Image View</button>
+
+
+
+          <button onclick="window.open('plots/SHRI SHAYAM COLONY.pdf')">PDF View</button>
+          <button onclick="window.open('https://maps.app.goo.gl/f74VYyRmRHmgfC9N8')">Location</button>
+          <button onclick="window.open('tel:+918534904412')">Call</button>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+<div class="card">
+        <div class="card-image-container">
+          <img src="images/Mathura.png" alt="Colony" onclick="openFullView(this)">
+            <h4>MATHURA VIHAR COLONY (LAKSAR)</h4>
+            <p>Best affrodable residential plots in colony</p>
+        </div>
+        <div class="card-buttons">
+
+
+
+
+
+
+
+          <!-- For Colony Plot -->
+          <button onclick="showImageList(this)" data-images='["images/Mathura.png"]'>Image View</button>
+
+
+
+          <button onclick="window.open('plots/MATHURA.pdf')">PDF View</button>
+          <button onclick="window.open('https://maps.app.goo.gl/tTVfmmRNXxSuLkXA8')">Location</button>
+          <button onclick="window.open('tel:+918534904412')">Call</button>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+        <!-- For Villas -->
+
+    <div id="villas" class="tab-content">
+      <div class="card">
+        <div class="card-image-container">
+          <img src="images/104.jpeg" alt="Villa" >
+        </div>
+        <div class="card-buttons">
+          
+
+        <button onclick="showImageList(this)" data-images='["images/104.jpeg", "images/104 1.jpeg", "images/104 2.jpeg", "images/104 3.jpeg"]'>Image View</button>
+
+
+
+          <button onclick="window.open('plots/104.pdf')">PDF View</button>
+          <button onclick="window.open('https://maps.app.goo.gl/m8fgcAnPg5ZpgDyz9')">Location</button>
+          <button onclick="window.open('tel:+918534904412')">Call</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Image Viewer -->
+    <div class="image-list" id="imageList"></div>
+     <span class="close-icon" onclick="closeImageList()">×</span>
+
+    <div class="full-image-view" id="fullImageView">
+  <button onclick="prevImage()">⟨</button>
+  <img id="fullImage" src="" alt="Full View">
+  <button onclick="nextImage()">⟩</button>
+  <button class="back-button" onclick="goBack()">⬅ Back to List</button>
 </div>
-	<!-- PROPERTIES SALE -->
-	 <div class="tab-content" id="rent" style="display: none;">
-    	<p>No rent properties yet. Coming soon!</p>
- 	 <!-- 👉 property sale cards here -->
-	</div>
 
-	<!-- HOUSE SALE -->
-	<div class="tab-content" id="dealers" style="display: none;">
-    	<p>Our trusted dealers will be listed here soon!</p>
- 	 <!-- 👉 house sale info here -->
-	</div>
+  </main>
 
-
-
-
-<!-- ======== WHATSAPP FLOATING BUTTON ======== -->
+  <!-- WhatsApp Floating Button -->
   <a href="https://wa.me/918534904412" class="whatsapp-float" target="_blank">
     <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
   </a>
 
-
-<!-- ✅ Footer HTML -->
-<footer class="footer">
-  <div class="footer-container">
-    <div class="footer-section">
-      <h2>RealTech</h2>
-      <p>Trusted Property Solutions</p>
-    </div>
-
-    <div class="footer-section">
-      <h3>Quick Links</h3>
-      <ul>
-        <li><a href="index.html">Home</a></li>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h2>RealTech</h2>
+        <p>Trusted Property Solutions</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
         <li><a href="plots.html">Plots</a></li>
         <li><a href="contact.html">Contact</a></li>
-      </ul>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>📞 +91-8534904412</p>
+        <p>📧 idrish.sh51@gmail.com</p>
+        <p>📍 Sultanpur Aadampur, Laksar, India</p>
+      </div>
     </div>
-
-    <div class="footer-section">
-      <h3>Contact Us</h3>
-      <p>📞 +91-8534904412</p>
-      <p>📧 idrish.sh51@gmail.com</p>
-      <p>📍 Sultanpur Aadampur, Laksar, India</p>
+    <div class="footer-bottom">
+      <p>&copy; 2025 RealTech. All rights reserved.</p>
     </div>
-  </div>
-  <div class="footer-bottom">
-    <p>&copy; 2025 RealTech. All rights reserved.</p>
-  </div>
-</footer>
+  </footer>
 
+  <!-- JavaScript -->
+  <script>
+  let currentImages = [];
+  let currentIndex = 0;
 
+  function showImageList(btn) {
+    const imageList = JSON.parse(btn.dataset.images);
+    currentImages = imageList;
+    currentIndex = 0;
 
+    const list = document.getElementById('imageList');
+    list.innerHTML = '';
 
- 	<!-- ✅ TABS SCRIPT -->
+    imageList.forEach((src, index) => {
+      const img = document.createElement('img');
+      img.src = src;
+      img.onclick = () => showFullImage(index);
+      list.appendChild(img);
+    });
 
+    list.style.display = 'flex';
+    document.querySelector('.close-icon').style.display = 'block';
+  }
 
-  	<script src="script.js"></script>
+  function showFullImage(index) {
+    currentIndex = index;
+    document.getElementById('imageList').style.display = 'none';
+    document.querySelector('.close-icon').style.display = 'none';
+    document.getElementById('fullImage').src = currentImages[index];
+    document.getElementById('fullImageView').style.display = 'flex';
+  }
 
-	<!-- ✅ SEARCH SCRIPT -->
+  function nextImage() {
+    currentIndex = (currentIndex + 1) % currentImages.length;
+    document.getElementById('fullImage').src = currentImages[currentIndex];
+  }
 
-	<script>
-function filterProperties() {
-  let input = document.getElementById('searchInput').value.toLowerCase();
-  let cards = document.getElementsByClassName('property-card');
+  function prevImage() {
+    currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
+    document.getElementById('fullImage').src = currentImages[currentIndex];
+  }
 
-  for (let i = 0; i < cards.length; i++) {
-    let cardText = cards[i].innerText.toLowerCase();
-    if (cardText.includes(input) || input === "") {
-      cards[i].style.display = "block"; // ✅ Always force show as block
-    } else {
-      cards[i].style.display = "none";
+  function goBack() {
+    document.getElementById('fullImageView').style.display = 'none';
+    document.getElementById('imageList').style.display = 'flex';
+    document.querySelector('.close-icon').style.display = 'block';
+  }
+
+  function closeImageList() {
+    document.getElementById('imageList').style.display = 'none';
+    document.querySelector('.close-icon').style.display = 'none';
+  }
+
+  function openTab(evt, tabId) {
+    const tabs = document.getElementsByClassName('tab-content');
+    for (let i = 0; i < tabs.length; i++) {
+      tabs[i].style.display = 'none';
     }
+    const tabLinks = document.getElementsByClassName('tab-link');
+    for (let i = 0; i < tabLinks.length; i++) {
+      tabLinks[i].classList.remove('active');
+    }
+    document.getElementById(tabId).style.display = 'block';
+    evt.currentTarget.classList.add('active');
   }
+
+function performSearch() {
+  const input = document.getElementById("searchInput").value.toLowerCase();
+  const activeTab = document.querySelector(".tab-content[style*='block'], .tab-content.active-tab");
+  const cards = activeTab.querySelectorAll(".card");
+
+  cards.forEach(card => {
+    const text = card.textContent.toLowerCase();
+    card.style.display = text.includes(input) || input === "" ? "block" : "none";
+  });
 }
 
-function openTab(tabId, element) {
-  var tabContents = document.getElementsByClassName("tab-content");
-  for (var i = 0; i < tabContents.length; i++) {
-    tabContents[i].style.display = "none";
-  }
 
-  var tabButtons = document.getElementsByClassName("tab-btn");
-  for (var i = 0; i < tabButtons.length; i++) {
-    tabButtons[i].classList.remove("active");
-  }
+window.onload = () => {
+  openTab({ currentTarget: document.querySelector('.tab-link.active') }, 'single');
+};
 
-  document.getElementById(tabId).style.display = "block";
-  element.classList.add("active");
-
-  if (tabId === 'sale') {
-    document.getElementById('searchInput').value = ""; // Clear search
-    filterProperties(); // Show all
-  }
-}
 </script>
-
-
-
-
 
 
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
