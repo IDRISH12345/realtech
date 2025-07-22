@@ -6,6 +6,15 @@
 
   <title>PLOTS - RealTech</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function() {
+      emailjs.init("DQ9ApzxK2xdeOqAJn");
+    })();
+  </script>
+
+
+
 </head>
 <body>
 
@@ -90,9 +99,26 @@
 
           <button onclick="window.open('plots/104.pdf')">PDF View</button>
           <button onclick="window.open('https://maps.app.goo.gl/m8fgcAnPg5ZpgDyz9')">Location</button>
-          <button onclick="window.open('tel:+918534904412')">Call</button>
+          <button onclick="window.open('tel:+918534904412')">Call </button>
+          <button class="book-btn" onclick="openBookingForm('Plot A')">Book Now</button>
+
         </div>
       </div>
+
+
+   <div id="bookingOverlay">
+    <div class="form-container">
+      <span class="close" onclick="closeBookingForm()">×</span>
+      <h3>Plot Booking Form</h3>
+      <form id="bookingForm">
+        <input type="text" name="user_name" placeholder="Your Name" required>
+        <input type="tel" name="user_phone" placeholder="Phone Number" required>
+        <input type="hidden" name="plot_name" id="plotNameField">
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
 
 
 
@@ -125,12 +151,25 @@
           <button onclick="window.open('plots/resi2.pdf')">PDF View</button>
           <button onclick="window.open('https://maps.app.goo.gl/qsEU4Pa3GajmqG8FA')">Location</button>
           <button onclick="window.open('tel:+918534904412')">Call</button>
+          <button class="book-btn" onclick="openBookingForm('Plot B')">Book Now</button>
         </div>
       </div>
 
 
 
 
+ <div id="bookingOverlay">
+    <div class="form-container">
+      <span class="close" onclick="closeBookingForm()">×</span>
+      <h3>Plot Booking Form</h3>
+      <form id="bookingForm">
+        <input type="text" name="user_name" placeholder="Your Name" required>
+        <input type="tel" name="user_phone" placeholder="Phone Number" required>
+        <input type="hidden" name="plot_name" id="plotNameField">
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
 
 
 
@@ -168,8 +207,36 @@
           <button onclick="window.open('plots/resi1.pdf')">PDF View</button>
           <button onclick="window.open('https://maps.app.goo.gl/eaMi4E1gzQVrx1xA6')">Location</button>
           <button onclick="window.open('tel:+918534904412')">Call</button>
+          <button class="book-btn" onclick="openBookingForm('Plot C')">Book Now</button>
         </div>
       </div>
+
+
+
+
+
+
+
+ <div id="bookingOverlay">
+    <div class="form-container">
+      <span class="close" onclick="closeBookingForm()">×</span>
+      <h3>Plot Booking Form</h3>
+      <form id="bookingForm">
+        <input type="text" name="user_name" placeholder="Your Name" required>
+        <input type="tel" name="user_phone" placeholder="Phone Number" required>
+        <input type="hidden" name="plot_name" id="plotNameField">
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
 
 
 
@@ -211,8 +278,25 @@
           <button onclick="window.open('plots/SHRI SHAYAM COLONY.pdf')">PDF View</button>
           <button onclick="window.open('https://maps.app.goo.gl/f74VYyRmRHmgfC9N8')">Location</button>
           <button onclick="window.open('tel:+918534904412')">Call</button>
+          <button class="book-btn" onclick="openBookingForm('Plot D')">Book Now</button>
         </div>
       </div>
+
+
+
+ <div id="bookingOverlay">
+    <div class="form-container">
+      <span class="close" onclick="closeBookingForm()">×</span>
+      <h3>Plot Booking Form</h3>
+      <form id="bookingForm">
+        <input type="text" name="user_name" placeholder="Your Name" required>
+        <input type="tel" name="user_phone" placeholder="Phone Number" required>
+        <input type="hidden" name="plot_name" id="plotNameField">
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
 
 
 
@@ -244,6 +328,7 @@
           <button onclick="window.open('plots/MATHURA.pdf')">PDF View</button>
           <button onclick="window.open('https://maps.app.goo.gl/tTVfmmRNXxSuLkXA8')">Location</button>
           <button onclick="window.open('tel:+918534904412')">Call</button>
+          <button class="book-btn" onclick="openBookingForm('Plot E')">Book Now</button>
         </div>
       </div>
 
@@ -252,6 +337,18 @@
 
 
 
+ <div id="bookingOverlay">
+    <div class="form-container">
+      <span class="close" onclick="closeBookingForm()">×</span>
+      <h3>Plot Booking Form</h3>
+      <form id="bookingForm">
+        <input type="text" name="user_name" placeholder="Your Name" required>
+        <input type="tel" name="user_phone" placeholder="Phone Number" required>
+        <input type="hidden" name="plot_name" id="plotNameField">
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
 
 
 
@@ -288,8 +385,36 @@
           <button onclick="window.open('plots/104.pdf')">PDF View</button>
           <button onclick="window.open('https://maps.app.goo.gl/m8fgcAnPg5ZpgDyz9')">Location</button>
           <button onclick="window.open('tel:+918534904412')">Call</button>
+          <button class="book-btn" onclick="openBookingForm('Plot F')">Book Now</button>
         </div>
       </div>
+
+
+
+
+
+ <div id="bookingOverlay">
+    <div class="form-container">
+      <span class="close" onclick="closeBookingForm()">×</span>
+      <h3>Plot Booking Form</h3>
+      <form id="bookingForm">
+        <input type="text" name="user_name" placeholder="Your Name" required>
+        <input type="tel" name="user_phone" placeholder="Phone Number" required>
+        <input type="hidden" name="plot_name" id="plotNameField">
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
     </div>
 
     <!-- Image Viewer -->
@@ -448,6 +573,49 @@
   window.onload = () => {
     openTab({ currentTarget: document.querySelector('.tab-link.active') }, 'single');
   };
+
+
+
+
+
+
+   
+
+
+  
+  function openBookingForm(plotName) {
+  document.getElementById('plotNameField').value = plotName;
+  document.getElementById('bookingOverlay').style.display = 'block';
+}
+
+function closeBookingForm() {
+  document.getElementById('bookingOverlay').style.display = 'none';
+}
+
+document.getElementById('bookingForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  emailjs.sendForm('service_abc123', 'template_zy91zm7', this)
+    .then(function(response) {
+      alert("Booking submitted successfully!");
+      document.getElementById('bookingForm').reset();
+      closeBookingForm();
+    }, function(error) {
+      alert("Failed to send booking. Try again.");
+      console.log('FAILED...', error);
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
 </script>
 
 
