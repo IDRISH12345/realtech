@@ -381,33 +381,53 @@
     evt.currentTarget.classList.add('active');
   }
 
-function performSearch() {
-  const input = document.getElementById("searchInput").value.toLowerCase();
 
-  // Get all tabs
-  const tabs = document.querySelectorAll(".tab-content");
+  function performSearch() {
+    const input = document.getElementById("searchInput").value.toLowerCase();
+    const tabs = document.querySelectorAll(".tab-content");
 
-  tabs.forEach(tab => {
-    const cards = tab.querySelectorAll(".card");
+    tabs.forEach(tab => {
+      const isActive = tab.classList.contains('active-tab');
+      const cards = tab.querySelectorAll(".card");
 
-    cards.forEach(card => {
-      const text = card.textContent.toLowerCase();
-      if (text.includes(input) || input === "") {
-        card.style.display = "block";
-      } else {
-        card.style.display = "none";
-      }
+      cards.forEach(card => {
+        const text = card.textContent.toLowerCase();
+        const matches = text.includes(input);
+
+        if (isActive) {
+          card.style.display = (matches || input === "") ? "block" : "none";
+        } else {
+          card.style.display = "none";
+        }
+      });
     });
-  });
-}
+  }
 
+  function openTab(evt, tabId) {
+    const tabs = document.getElementsByClassName('tab-content');
+    for (let i = 0; i < tabs.length; i++) {
+      tabs[i].style.display = 'none';
+      tabs[i].classList.remove('active-tab');
+    }
+    const tabLinks = document.getElementsByClassName('tab-link');
+    for (let i = 0; i < tabLinks.length; i++) {
+      tabLinks[i].classList.remove('active');
+    }
+    const activeTab = document.getElementById(tabId);
+    activeTab.style.display = 'block';
+    activeTab.classList.add('active-tab');
+    evt.currentTarget.classList.add('active');
 
+    // Clear search and reset
+    document.getElementById("searchInput").value = "";
+    performSearch();
+  }
 
-window.onload = () => {
-  openTab({ currentTarget: document.querySelector('.tab-link.active') }, 'single');
-};
-
+  window.onload = () => {
+    openTab({ currentTarget: document.querySelector('.tab-link.active') }, 'single');
+  };
 </script>
+
 
 
 
