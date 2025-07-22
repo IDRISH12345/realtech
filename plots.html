@@ -383,14 +383,24 @@
 
 function performSearch() {
   const input = document.getElementById("searchInput").value.toLowerCase();
-  const activeTab = document.querySelector(".tab-content[style*='block'], .tab-content.active-tab");
-  const cards = activeTab.querySelectorAll(".card");
 
-  cards.forEach(card => {
-    const text = card.textContent.toLowerCase();
-    card.style.display = text.includes(input) || input === "" ? "block" : "none";
+  // Get all tabs
+  const tabs = document.querySelectorAll(".tab-content");
+
+  tabs.forEach(tab => {
+    const cards = tab.querySelectorAll(".card");
+
+    cards.forEach(card => {
+      const text = card.textContent.toLowerCase();
+      if (text.includes(input) || input === "") {
+        card.style.display = "block";
+      } else {
+        card.style.display = "none";
+      }
+    });
   });
 }
+
 
 
 window.onload = () => {

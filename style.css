@@ -605,12 +605,6 @@ header {
 
 /* ======== Tab Nav ======== */
 
-body {
-  font-family: Arial, sans-serif;
-  background: #808080;
-  padding: 20px;
-  text-align: center;
-}
 
 h1 {
   margin-bottom: 20px;
@@ -656,12 +650,7 @@ h1 {
 }
 
 
-body {
-  font-family: Arial, sans-serif;
-  background: #ffffff;
-  padding: 20px;
-  text-align: center;
-}
+
 
 
 
@@ -681,6 +670,75 @@ body {
   border-radius: 10px;
   border: 2px solid #000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* ===== Responsive Design for Mobile Screens ===== */
+@media (max-width: 768px) {
+  header, .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header-right {
+    margin-top: 10px;
+  }
+
+  .hero-content {
+    padding: 20px;
+  }
+
+  .paragraph-section {
+    grid-template-columns: 1fr;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90% !important;
+  }
+
+  .search-bar {
+    flex-direction: column;
+  }
+
+  .tab-nav {
+    flex-direction: column;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  iframe {
+  width: 100%;
+  height: auto;
+  border: none;
+}
+
+
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+  }
+
+  .tab-content {
+    padding: 10px;
+  }
+
+  .card-buttons {
+    flex-direction: column;
+  }
 }
 
 
