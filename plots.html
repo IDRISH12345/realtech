@@ -44,6 +44,10 @@
       </ul>
     </nav>
 
+<select id="languageSelect" class="lang-dropdown" onchange="changeLanguage()">
+  <option value="en">English</option>
+  <option value="hi">हिन्दी</option>
+</select>
 
     <div class="header-right">
       <a href="https://wa.me/918534904412" class="whatsapp">WhatsApp</a>
@@ -288,7 +292,7 @@
     <div class="form-container">
       <span class="close" onclick="closeBookingForm()">×</span>
       <h3>Plot Booking Form</h3>
-      <form id="bookingForm">
+      <form id="bookingForm"onsubmit="sendWhatsAppMessage(event)">
         <input type="text" name="user_name" placeholder="Your Name" required>
         <input type="tel" name="user_phone" placeholder="Phone Number" required>
         <input type="hidden" name="plot_name" id="plotNameField">
@@ -608,8 +612,29 @@ document.getElementById('bookingForm').addEventListener('submit', function(event
 
 
 
+  function changeLanguage() {
+    const selectedLang = document.getElementById('languageSelect').value;
+    alert("Language changed to: " + selectedLang);
+    // 🔁 Future: Load language strings dynamically
+    // Example: window.location.href = "?lang=" + selectedLang;
+  }
 
 
+
+function sendWhatsAppMessage(event) {
+    event.preventDefault(); // form submit ko roko
+
+    const name = document.getElementById("name").value;
+    const plot = document.getElementById("plot").value;
+    const phone = document.getElementById("phone").value;
+
+    const message = `Booking Request:\nName: ${name}\nPlot: ${plot}\nPhone: ${phone}`;
+
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappURL = `https://wa.me/918534904412?text=${encodedMessage}`;
+
+    window.open(whatsappURL, '_blank'); // WhatsApp open hoga
+  }
 
 
 
